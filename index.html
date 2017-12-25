@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>test-dec demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-sd-ce.js"></script>
+
+  <!-- Use `npm run serve` to start a development server. -->
+
+  <style>
+    body {
+      background-color: #eee;
+      padding: 24px;
+    }
+
+    test-dec {
+      margin: 8px;
+    }
+
+    test-dec.blue {
+      --test-dec-background-color: #03A9F4;
+    }
+  </style>
+</head>
+<body>
+  <test-dec></test-dec>
+
+  <test-dec one="Pickle"></test-dec>
+
+  <test-dec>Slot content</test-dec>
+
+  <test-dec class="blue"></test-dec>
+</body>
+</html>

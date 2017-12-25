@@ -1,0 +1,58 @@
+{
+  "name": "test-dec",
+  "version": "0.1.0",
+  "description": "Generated Nutmeg Web Component",
+  "main": "dist/test-dec.js",
+  "module": "dist/test-dec.js",
+  "unpkg": "dist/test-dec.min.js",
+  "types": "dist/test-dec.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "test-dec",
+    "nutmeg"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && webpack",
+    "clean": "rm -rf dist/*",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "serve": "tsc --watch & webpack-dev-server --open",
+    "test": "karma start",
+    "watch": "tsc --watch & webpack --watch"
+  },
+  "dependencies": {
+    "lit-html": "0.7.1"
+  },
+  "devDependencies": {
+    "@types/chai": "4.0.10",
+    "@types/karma-fixture": "0.2.3",
+    "@types/mocha": "2.2.44",
+    "@webcomponents/webcomponentsjs": "1.0.22",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "4.1.2",
+    "html-webpack-plugin": "2.30.1",
+    "karma": "2.0.0",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-firefox-launcher": "1.1.0",
+    "karma-fixture": "0.2.6",
+    "karma-html2js-preprocessor": "1.1.0",
+    "karma-mocha": "1.3.0",
+    "karma-opera-launcher": "1.0.0",
+    "karma-safari-launcher": "1.0.0",
+    "karma-typescript": "3.0.9",
+    "karma-typescript-es6-transform": "1.0.3",
+    "karma-webpack": "2.0.9",
+    "mocha": "4.0.1",
+    "typescript": "2.6.2",
+    "uglifyjs-webpack-plugin": "1.1.4",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.9.7"
+  }
+}
