@@ -27,10 +27,14 @@
 <body>
   <test-dec></test-dec>
 
-  <test-dec one="Pickle"></test-dec>
+  <test-dec attr1 attr2="html attr2" attr3="42"></test-dec>
 
-  <test-dec>Slot content</test-dec>
-
-  <test-dec class="blue"></test-dec>
+  <script>
+    const el = document.querySelector('test-dec');
+    el.prop2 = { foo: 'js prop' };
+    el.attr1 = true;
+    el.attr2 = 'js prop';
+    el.attr3 = 6;
+  </script>
 </body>
 </html>
